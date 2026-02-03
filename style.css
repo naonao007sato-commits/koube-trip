@@ -2,26 +2,9 @@
 body {
   margin: 0;
   font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  background: #f7f7f5;
   color: #2b2b2b;
   line-height: 1.8;
-
-  /* 背景を凝らす */
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(44, 83, 100, 0.12),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(200, 169, 106, 0.15),
-      transparent 55%
-    ),
-    linear-gradient(
-      180deg,
-      #f9f9f7,
-      #f2f3f5
-    );
 }
 
 
@@ -147,5 +130,54 @@ footer {
     margin: 1.2rem;
     padding: 1.5rem;
   }
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  color: #2b2b2b;
+  line-height: 1.8;
+
+  /* 背景を凝らす */
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(44, 83, 100, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(200, 169, 106, 0.15),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      #f9f9f7,
+      #f2f3f5
+    );
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(2px);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08),
+    0 1px 0 rgba(255,255,255,0.8) inset;
+}
+
+header {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31, 60, 91, 0.95),
+      rgba(44, 83, 100, 0.95)
+    );
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
