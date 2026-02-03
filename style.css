@@ -1,1 +1,203 @@
+/* =========================
+   基本リセット
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #333;
+  line-height: 1.6;
+
+  /* 神戸写真＋上品オーバーレイ */
+  background:
+    linear-gradient(
+      rgba(247, 247, 245, 0.88),
+      rgba(247, 247, 245, 0.88)
+    ),
+    url("images/kobe-bg.jpg") center / cover no-repeat fixed;
+}
+
+
+/* =========================
+   レイアウト共通
+========================= */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+header {
+  background: linear-gradient(
+    135deg,
+    rgba(31, 60, 91, 0.95),
+    rgba(44, 83, 100, 0.95)
+  );
+  color: #fff;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+header p {
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   見出し
+========================= */
+h2 {
+  font-size: 1.4rem;
+  color: #2c5364;
+  border-left: 5px solid #c8a96a;
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   共通カード（上品・縁取り）
+========================= */
+.card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(200, 169, 106, 0.55);
+  border-radius: 10px;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.08),
+    0 0 0 4px rgba(255,255,255,0.8) inset;
+
+  padding: 22px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* カード上部の装飾ライン */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #c8a96a,
+    #e8d9b0,
+    #c8a96a
+  );
+  border-radius: 10px 10px 0 0;
+}
+
+/* カード内画像 */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   日程（似島旅行デザイン）
+========================= */
+.schedule {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* 縦ライン */
+.schedule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #c8a96a,
+    rgba(200,169,106,0.3)
+  );
+}
+
+/* 各予定 */
+.schedule-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 18px 20px 18px 25px;
+
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(200,169,106,0.5);
+  border-radius: 10px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+/* 時間ポイント */
+.schedule-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  background: #c8a96a;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.schedule-time {
+  font-weight: bold;
+  color: #2c5364;
+  margin-bottom: 6px;
+}
+
+.schedule-content {
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   リスト（費用など）
+========================= */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+
+/* =========================
+   フッター
+========================= */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  padding: 30px 10px;
+}
+
 
