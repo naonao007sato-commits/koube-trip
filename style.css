@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #2c7be5;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card {
+  background: white;
+  margin: 1rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  border-left: 5px solid #2c7be5;
+  padding-left: 0.5rem;
+}
+
+.timeline p {
+  margin: 0.5rem 0;
+}
+
+.timeline span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.note {
+  color: #d6336c;
+  font-size: 0.9rem;
+}
+
+.spot {
+  margin-top: 1rem;
+}
+
+.spot img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cost li {
+  margin: 0.4rem 0;
+}
+
+.total {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem;
+  color: #666;
+}
