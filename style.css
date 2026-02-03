@@ -288,4 +288,17 @@ footer {
   margin: 0 auto 36px;  /* 中央寄せ＋下余白 */
 }
 
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
