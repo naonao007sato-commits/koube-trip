@@ -2,10 +2,28 @@
 body {
   margin: 0;
   font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
-  background: #f7f7f5;
   color: #2b2b2b;
   line-height: 1.8;
+
+  /* 背景を凝らす */
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(44, 83, 100, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(200, 169, 106, 0.15),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      #f9f9f7,
+      #f2f3f5
+    );
 }
+
 
 /* ===== ヘッダー ===== */
 header {
@@ -130,3 +148,4 @@ footer {
     padding: 1.5rem;
   }
 }
+
