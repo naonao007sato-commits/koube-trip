@@ -302,3 +302,31 @@ footer {
   transform: translateY(0);
 }
 
+/* =========================
+   スマホ表示最適化
+========================= */
+@media (max-width: 768px) {
+
+  main {
+    padding: 0 12px;
+  }
+
+  .card {
+    max-width: 100%;          /* 画面いっぱい */
+    margin: 0 auto 44px;      /* 1枚ずつ感 */
+    padding: 24px 18px;
+  }
+
+  .card img {
+    border-radius: 12px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .timeline p {
+    font-size: 0.95rem;
+  }
+}
+
