@@ -7,6 +7,40 @@ body {
   line-height: 1.8;
 }
 
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  color: #2b2b2b;
+  line-height: 1.8;
+
+  /* 背景を凝らす */
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(44, 83, 100, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(200, 169, 106, 0.15),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      #f9f9f7,
+      #f2f3f5
+    );
+}
+
+/* ===== 神戸の写真を背景に ===== */
+body {
+  background:
+    linear-gradient(
+      rgba(247,247,245,0.88),
+      rgba(247,247,245,0.88)
+    ),
+    url("images/kobe-bg.jpg") center / cover no-repeat fixed;
+}
 
 /* ===== ヘッダー ===== */
 header {
@@ -32,6 +66,18 @@ header p {
   opacity: 0.9;
 }
 
+header {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31, 60, 91, 0.95),
+      rgba(44, 83, 100, 0.95)
+    );
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
 /* ===== カード共通 ===== */
 .card {
   background: #ffffff;
@@ -40,6 +86,34 @@ header p {
   max-width: 720px;
   border-radius: 6px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(2px);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08),
+    0 1px 0 rgba(255,255,255,0.8) inset;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #c8a96a,
+    #e8d9b0,
+    #c8a96a
+  );
+  border-radius: 10px 10px 0 0;
 }
 
 /* ===== 見出し ===== */
@@ -132,78 +206,10 @@ footer {
   }
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
-  color: #2b2b2b;
-  line-height: 1.8;
 
-  /* 背景を凝らす */
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(44, 83, 100, 0.12),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(200, 169, 106, 0.15),
-      transparent 55%
-    ),
-    linear-gradient(
-      180deg,
-      #f9f9f7,
-      #f2f3f5
-    );
-}
 
-.card {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(2px);
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 720px;
-  border-radius: 6px;
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.08),
-    0 1px 0 rgba(255,255,255,0.8) inset;
-}
 
-header {
-  background:
-    linear-gradient(
-      135deg,
-      rgba(31, 60, 91, 0.95),
-      rgba(44, 83, 100, 0.95)
-    );
-  color: #fff;
-  text-align: center;
-  padding: 3rem 1rem;
-}
 
-/* ===== 神戸の写真を背景に ===== */
-body {
-  background:
-    linear-gradient(
-      rgba(247,247,245,0.88),
-      rgba(247,247,245,0.88)
-    ),
-    url("images/kobe-bg.jpg") center / cover no-repeat fixed;
-}
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    #c8a96a,
-    #e8d9b0,
-    #c8a96a
-  );
-  border-radius: 10px 10px 0 0;
-}
+
 
