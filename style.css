@@ -181,3 +181,13 @@ header {
   padding: 3rem 1rem;
 }
 
+/* ===== 神戸の写真を背景に ===== */
+body {
+  background:
+    linear-gradient(
+      rgba(247,247,245,0.88),
+      rgba(247,247,245,0.88)
+    ),
+    url("images/kobe-bg.jpg") center / cover no-repeat fixed;
+}
+
