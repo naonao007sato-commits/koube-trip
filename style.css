@@ -270,6 +270,67 @@ footer {
   
 }
 
+/* ===== 日程（似島旅行デザインベース） ===== */
+.schedule {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* 縦ライン */
+.schedule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #c8a96a,
+    rgba(200,169,106,0.3)
+  );
+}
+
+/* 1つ1つの予定 */
+.schedule-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 18px 20px 18px 25px;
+
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(200,169,106,0.5);
+  border-radius: 10px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+/* 丸ポチ（時間ポイント） */
+.schedule-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  background: #c8a96a;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* 時間 */
+.schedule-time {
+  font-weight: bold;
+  color: #2c5364;
+  margin-bottom: 6px;
+}
+
+/* 内容 */
+.schedule-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
 
 
 
