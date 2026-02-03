@@ -18,7 +18,7 @@ body {
       rgba(247, 247, 245, 0.88),
       rgba(247, 247, 245, 0.88)
     ),
-    url("images/kobe-bg.jpg") center / cover no-repeat fixed;
+    url("images/harborland.jpg") center / cover no-repeat fixed;
 }
 
 
@@ -329,4 +329,5 @@ footer {
     font-size: 0.95rem;
   }
 }
+
 
