@@ -1,66 +1,132 @@
+/* ===== 全体 ===== */
 body {
   margin: 0;
-  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
-  background: #f4f6f8;
-  color: #333;
+  font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  background: #f7f7f5;
+  color: #2b2b2b;
+  line-height: 1.8;
 }
 
+/* ===== ヘッダー ===== */
 header {
-  background: #2c7be5;
-  color: white;
+  background: linear-gradient(
+    135deg,
+    #1f3c5b,
+    #2c5364
+  );
+  color: #fff;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2.5rem 1rem;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.08em;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ===== カード共通 ===== */
 .card {
-  background: white;
-  margin: 1rem;
-  padding: 1.2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background: #ffffff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
 
+/* ===== 見出し ===== */
 h2 {
-  border-left: 5px solid #2c7be5;
-  padding-left: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #c8a96a;
+  letter-spacing: 0.05em;
 }
 
+/* ===== タイムライン ===== */
 .timeline p {
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
 }
 
 .timeline span {
   font-weight: bold;
+  color: #1f3c5b;
   margin-right: 0.5rem;
 }
 
+/* 注意書き */
 .note {
-  color: #d6336c;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: #8a1c3a;
+  margin-left: 1rem;
 }
 
+/* ===== スポット紹介 ===== */
 .spot {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .spot img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.spot h3 {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+  color: #1f3c5b;
+}
+
+.spot p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== 費用 ===== */
+.cost {
+  list-style: none;
+  padding: 0;
 }
 
 .cost li {
-  margin: 0.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #ccc;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
 }
 
 .total {
-  margin-top: 1rem;
-  font-size: 1.1rem;
+  margin-top: 1.5rem;
   text-align: right;
+  font-size: 1.2rem;
+  color: #1f3c5b;
 }
 
+/* ===== フッター ===== */
 footer {
   text-align: center;
+  padding: 2rem 1rem;
   font-size: 0.8rem;
-  padding: 1rem;
-  color: #666;
+  color: #777;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    margin: 1.2rem;
+    padding: 1.5rem;
+  }
 }
