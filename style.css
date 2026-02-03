@@ -330,10 +330,5 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  iframe {
-    height: 300px;
-  }
-}
 
 
